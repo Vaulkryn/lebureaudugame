@@ -1,0 +1,275 @@
+@import url("bricks.css");
+@import url("animations.css");
+@import url("dividers.css");
+@import url("modals.css");
+
+@media screen and (max-width: 2560px) {
+
+    .main_wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .banner {
+        margin-bottom: 5rem;
+        padding-top: 3.4rem;
+    }
+
+    .banner_container {
+        background: #212124;
+        height: 1.4rem;
+        padding: 1.4rem;
+    }
+
+    .banner_container p {
+        text-align: center;
+        color: darkorange;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    /*******************************/
+    /***** ↓↓ video_wrapper ↓↓ *****/
+
+    .video_wrapper {
+        position: sticky;
+        top: 5rem;
+        margin: 0 0 4rem 0;
+    }
+
+    .video_container video {
+        object-fit: contain;
+        cursor: pointer;
+        height: auto;
+        width: 900px;
+        border-radius: 8px;
+    }
+
+    .video_container,
+    .video_content {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        box-shadow: 0px 4px 8px black inset;
+        background: #18181B;
+        padding: 25px;
+        overflow-y: scroll;
+    }
+
+    .video_content {
+        display: none;
+    }
+
+    .video_infos h4 {
+        margin: 12px 0 4px 0;
+    }
+
+    .video_infos p {
+        color: darkgrey;
+        font-size: 15px;
+        margin: 0;
+        padding-bottom: 8px;
+    }
+
+    .video_owner {
+        display: flex;
+        margin-top: 14px;
+        padding: 14px 0;
+        border-top: 1px solid darkgrey;
+    }
+
+    .video_owner img {
+        object-fit: cover;
+        border: 2px solid #53535F;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-right: 8px;
+    }
+
+    .video_owner a {
+        text-decoration: none;
+        align-self: center;
+        color: white;
+        transition: .2s;
+    }
+
+    .video_owner a:hover {
+        color: darkorange;
+    }
+
+    .video_ownerShortText p {
+        color: white;
+        width: 35rem;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .game_redirect {
+        border-bottom: 1px solid darkgrey;
+        padding: 2rem 0;
+    }
+
+    .game_redirect a {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        width: 25rem;
+    }
+
+    .game_redirect img {
+        width: 100px;
+        height: 135px;
+    }
+
+    .game_redirectInfos {
+        background: rgba(0, 0, 0, 0.3);
+        width: 20rem;
+        height: 8.5rem;
+    }
+
+    .game_redirectInfos h4 {
+        color: white;
+        margin: 2.5rem 0 0 1rem;
+    }
+
+    .game_redirectInfos p {
+        color: darkgrey;
+        font-size: 14px;
+        margin: 0.2rem 0 0 1rem;
+    }
+
+    /***********************************/
+    /***** ↓↓ videoList_wrapper ↓↓ *****/
+
+    .videoList_wrapper {
+        width: 68.5rem;
+        margin: 0 0 5.2rem 0;
+    }
+
+    .videoList_nav {
+        border-bottom: 1px solid black;
+        background-color: #18181B;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 0.8rem;
+    }
+
+    .videoList_nav ul {
+        display: inline-flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .videoList_nav a {
+        text-decoration: none;
+        position: relative;
+        color: white;
+        margin: 0 2.5rem;
+        left: 0;
+        transition: .2s;
+    }
+
+    .videoList_nav a:hover {
+        color: darkorange;
+        left: 4px;
+    }
+
+    .videoList_container {
+        background-color: #18181B;
+        padding: 1rem 2rem;
+    }
+
+    .videoList_container h4 {
+        text-decoration: underline;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 2.6rem;
+    }
+
+    .videoList_category,
+    .imageList_category {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imageList_category {
+        justify-content: space-around;
+    }
+
+    .videoList_item,
+    .imageList_item {
+        flex-direction: column;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        width: 220px;
+        margin-right: 1.5rem;
+    }
+
+    .imageList_item {
+        margin: 0.8rem 0;
+    }
+
+    .videoList_item p,
+    .imageList_item p {
+        margin: 0.5rem 0 1.5rem 0;
+    }
+
+    .videoList_item img,
+    .imageList_item img {
+        border-radius: 8px;
+        width: 220px;
+        height: 100px;
+        transition: .2s;
+        border: 2px solid darkgrey;
+    }
+
+    .videoList_item img:hover,
+    .imageList_item img:hover {
+        box-shadow: 0px 0px 5px white;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    /**************************/
+    /***** ↓↓ Comments ↓↓ *****/
+
+    .comments form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+
+    .comments textarea {
+        margin: 0;
+        margin-bottom: 1rem;
+        height: 7rem;
+        width: 100%;
+    }
+
+    /**********************************************/
+    /***** ↓↓ Object position for Lost Ark ↓↓ *****/
+
+    .LostArk img {
+        object-position: 0 -8rem;
+    }
+
+    .SkyforceReload img {
+        object-position: 0 -35rem;
+    }
+
+    @media screen and (max-width: 1930px) {
+
+        .videoList_wrapper {
+            width: 48.5rem;
+        }
+    }
+}

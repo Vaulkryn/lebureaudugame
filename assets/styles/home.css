@@ -1,0 +1,219 @@
+@import url("bricks.css");
+@import url("animations.css");
+@import url("dividers.css");
+@import url("modals.css");
+
+@media screen and (max-width: 2560px) {
+
+  /********************************/
+  /***** ↓↓ Banner section ↓↓ *****/
+
+  .banner {
+    margin-bottom: 8rem;
+  }
+
+  .banner_container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 645px;
+    padding-top: 55px;
+  }
+
+  .news {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    font-size: 18px;
+    width: 1250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .news h1 {
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .news h2 {
+    font-size: 22px;
+    text-decoration: underline;
+    color: darkorange;
+    text-align: left;
+  }
+
+  .news p {
+    text-decoration: underline;
+  }
+
+  .news ul {
+    list-style: none;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .news a {
+    text-decoration: none;
+    color: darkorange;
+  }
+
+  .patchnotes {
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .patchnotes {
+    overflow-y: scroll;
+  }
+
+  /***************************************/
+  /***** ↓↓ Games wrapper section ↓↓ *****/
+
+  .games_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .games_subwrapper {
+    display: flex;
+    margin-bottom: 14rem;
+  }
+
+  .games_container {
+    width: 750px;
+  }
+
+  .games_title {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "new_zelek";
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .games_slider {
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 4px 8px black inset;
+    padding: 18px 12px 18px 12px;
+  }
+
+  .games_slider img {
+    height: 220px;
+    border-radius: 6px;
+    border: 2px solid grey;
+    transition: .4s;
+  }
+
+  .games_slider img:hover {
+    box-shadow: 0px 0px 8px white;
+    border: 2px solid white;
+  }
+
+  .category_container {
+    margin-left: 18rem;
+  }
+
+  .category_info {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+    font-size: 18px;
+    width: 250px;
+    height: 258px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 4px 8px black inset;
+    padding: 18px;
+  }
+
+  .category_info p {
+    margin: 12px 0;
+  }
+
+  .category_info a {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: dodgerblue;
+    transition: .2s;
+  }
+
+  .category_info a:hover {
+    color: darkorange;
+    left: 4px;
+  }
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 8px 24px 8px 24px;
+  }
+
+  /*******************************************/
+  /***** ↓↓ Random screenshot section ↓↓ *****/
+
+  .randomscreenshot_container {
+    margin-top: 70px;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 14rem;
+  }
+
+  .randomscreenshot_title {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "new_zelek";
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .randomscreenshot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 4px 8px black inset;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 1rem;
+  }
+
+  .randomscreenshot img {
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 1rem;
+    height: 120px;
+    width: 213px;
+    transition: 0.3s;
+    border: 2px solid grey;
+  }
+
+  .randomscreenshot img:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 0px 8px white;
+    transform: translateY(-5px);
+  }
+
+  @media screen and (max-width: 1930px) {
+
+    .news {
+      width: 1250px;
+    }
+  }
+
+  @media screen and (max-width: 1800px) {
+
+    .games_container {
+      width: 720px;
+    }
+  }
+}

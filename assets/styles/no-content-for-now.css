@@ -1,0 +1,85 @@
+@import url("bricks.css");
+@import url("dividers.css");
+
+.noContent_wrapper {
+    margin: 0 auto;
+    padding: 21rem 0;
+    width: 28rem;
+}
+
+.noContent_title {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "new_zelek";
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.noContent_container {
+    text-align: center;
+    box-shadow: 0px 4px 8px black inset;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 25px;
+}
+
+.noContent_container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.noContent_container li {
+    margin: 12px 0;
+}
+
+.noContent_container p,
+a {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.noContent_container p {
+    font-family: sans-serif;
+}
+
+.noContent_container a {
+    position: relative;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: .2s;
+    left: 0;
+}
+
+.noContent_container a:hover {
+    color: darkorange;
+    left: 4px;
+}
+
+/**************/
+/*** Roadmap **/
+
+.wrappmap {
+    padding: 10rem 0;
+    width: 40rem;
+}
+
+.map {
+    overflow-y: scroll;
+    text-align: left;
+    height: 34rem;
+}
+
+.map p {
+    color: darkorange;
+    font-size: 24px;
+}
+
+.map li {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}

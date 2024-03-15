@@ -1,0 +1,111 @@
+@import url("bricks.css");
+@import url("dividers.css");
+
+.adminHome_wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 7rem 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.adminHome_title {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "new_zelek";
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.media_subwrapper {
+    width: 62rem;
+}
+
+.proposal_subwrapper {
+    width: 35rem;
+}
+
+.logsAdmin_subwrapper {
+    width: 30rem;
+}
+
+.media_container,
+.proposal_container,
+.logsAdmin_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-weight: bold;
+    font-family: sans-serif;
+    justify-content: space-between;
+    color: white;
+    overflow-y: scroll;
+    height: 42rem;
+    font-size: 18px;
+    box-shadow: 0px 4px 8px black inset;
+    background-color: #212124;
+    padding: 1rem;
+}
+
+.media_container button,
+.proposal_container button {
+    width: 7rem;
+}
+
+/*********************************/
+/****** ↓↓ media_container ↓↓ ****/
+
+.media_container div {
+    margin-bottom: 1rem;
+}
+
+.media_container i {
+    color: grey;
+}
+
+.media_container p {
+    text-align: center;
+    margin: 0;
+}
+
+.media_container img,
+video {
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 1rem;
+    height: 240px;
+    width: 426px;
+    border: 1px solid white;
+}
+
+/************************************/
+/****** ↓↓ proposal_container ↓↓ ****/
+
+.proposal_container div {
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.proposal_container i {
+    color: darkorange;
+}
+
+.proposal_container p {
+    text-align: left;
+}
+
+/********************************/
+/****** ↓↓ logs_container ↓↓ ****/
+
+.logsAdmin_container div {
+    word-wrap: break-word;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.logsAdmin_container i {
+    color: grey;
+}

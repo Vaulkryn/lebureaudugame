@@ -1,0 +1,174 @@
+@import url("bricks.css");
+@import url("dividers.css");
+
+/*******************************/
+/***** ↓↓ Rules for all ↓↓ *****/
+
+.contents_wrapper {
+    padding: 90px 0;
+    margin: 0 auto;
+    width: 45rem;
+}
+
+.contents_title {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "new_zelek";
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.contents_container {
+    box-shadow: 0px 4px 8px black inset;
+    background: #212124;
+    padding: 0.5rem 1rem;
+}
+
+.contents_container p {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.contents_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outputImg {
+    border: 2px solid #53535F;
+    border-radius: 8px;
+    width: 280px;
+    height: 160px;
+    margin-bottom: 3rem;
+}
+
+output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: scroll;
+    height: 25rem;
+    width: 42rem;
+    margin: 2rem 0;
+}
+
+select {
+    background-color: #373636;
+    text-align: center;
+    cursor: pointer;
+    border: solid 2px grey;
+    color: white;
+    font-size: 18px;
+    width: 13rem;
+    margin: 0.7rem 0;
+    padding: 6px 0;
+    padding-left: 0.8rem;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+select:hover {
+    border: solid 2px white;
+}
+
+select:focus {
+    border: solid 2px white;
+}
+
+/*******************************************/
+/***** ↓↓ Input Button Upload Style ↓↓ *****/
+
+.inputUpload_wrapper {
+    margin-top: 1.2rem;
+}
+
+.inputUpload+label {
+    font-family: sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0.7rem 0;
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: 2px solid grey;
+    transition: .4s;
+}
+
+.inputStyle+label {
+    color: #f1e5e6;
+    background-color: #373636;
+}
+
+.inputStyle:focus+label,
+.inputStyle.has-focus+label,
+.inputStyle+label:hover {
+    border: 2px solid white;
+}
+
+.textInput {
+    margin: 0.8rem;
+    width: 22.5rem;
+    border: 2px solid grey;
+}
+
+.textInput:hover {
+    border: solid 2px white;
+}
+
+.textInput:focus {
+    border: 2px solid white;
+}
+
+/**********************************/
+/***** ↓↓ video_upload.php ↓↓ *****/
+
+.videoInput {
+    margin: 2rem 0;
+}
+
+.wrappvideo {
+    padding: 5.5rem 24rem;
+}
+
+.containvideo {
+    height: 25rem;
+}
+
+/*************************************/
+/***** ↓↓ uploads_pending.php ↓↓ *****/
+
+.wrappupp {
+    padding: 8rem 0;
+    width: 80rem;
+}
+
+.containupp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-y: scroll;
+    height: 37rem;
+}
+
+.containupp i {
+    color: grey;
+}
+
+.containupp img {
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 1rem;
+    height: 120px;
+    width: 212px;
+    border: 1px solid white;
+}

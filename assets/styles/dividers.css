@@ -1,0 +1,16 @@
+.divider {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 10px black;
+    border: 1px solid black;
+    height: 20px;
+}
+
+.top {
+    box-shadow: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.bottom {
+    box-shadow: 0 -4px 8px black;
+    border-radius: 0 0 8px 8px;
+}

@@ -1,0 +1,476 @@
+@font-face {
+    font-family: "new_zelek";
+    src: url("../fonts/new_zelek.eot");
+    src: url("../fonts/new_zelek.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/new_zelek.woff2") format("woff2"),
+        url("../fonts/new_zelek.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    scrollbar-color: #373636 #0E0E10;
+    scrollbar-width: thin;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #0E0E10;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #373636;
+}
+
+@media screen and (max-width: 2560px) {
+
+    #menuOverlay {
+        position: fixed;
+        cursor: pointer;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 95%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    body {
+        background: url(../img/background/CastleRoad_21.9.jpg)no-repeat;
+        background-attachment: fixed;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    input,
+    textarea {
+        background: #373636;
+        font-weight: bold;
+        color: white;
+        border: solid 1px transparent;
+        font-size: 18px;
+        border-radius: 4px;
+        margin-top: 8px;
+        margin-bottom: 32px;
+        padding: 0 20px;
+        height: 40px;
+        opacity: 1;
+        transition: .4s;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+        opacity: 0.8;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-weight: bold;
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    textarea {
+        resize: none;
+        padding: 8px;
+        height: 14rem;
+        font-size: 20px;
+        margin: 0.8rem;
+        width: 24rem;
+        border: 2px solid grey;
+        transition: .4s;
+    }
+
+    textarea:hover {
+        border: 2px solid white;
+    }
+
+    textarea:focus {
+        border: 2px solid white;
+    }
+
+    button {
+        align-self: center;
+        font-family: "new_zelek";
+        background: #373636;
+        border: 2px solid grey;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 4px;
+        height: 40px;
+        margin: 0;
+        width: 15rem;
+        transition: .3s;
+    }
+
+    button:hover {
+        border: 2px solid white;
+    }
+
+    .button_wrapper {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0.8rem 0;
+    }
+
+    .submitButton:hover {
+        background: #2962FF;
+    }
+
+    .validateButton:hover {
+        background: darkgreen;
+    }
+
+    .cancelButton:hover {
+        background: darkred;
+    }
+
+    .alertUserSettings {
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 18px;
+        width: 100%;
+        padding: 12px 0;
+        margin: 0 0 18px 0;
+    }
+
+    .success {
+        background-color: darkgreen;
+    }
+
+    .error {
+        background-color: darkred;
+    }
+
+    /************************/
+    /***** ↓↓ Header ↓↓ *****/
+
+    .topnav {
+        font-family: "new_zelek";
+        background: #18181B;
+        position: fixed;
+        box-shadow: 0px 4px 8px black;
+        height: 55px;
+        width: 100%;
+        padding: 0;
+        top: 0;
+        z-index: 999;
+    }
+
+    .header_left {
+        display: flex;
+        float: left;
+        height: 100%;
+    }
+
+    .header_left a {
+        text-decoration: none;
+        align-self: center;
+        color: white;
+        font-size: 28px;
+        padding: 0 12px;
+    }
+
+    .header_right {
+        display: flex;
+        float: right;
+        height: 100%;
+    }
+
+    .header_right a {
+        background-color: #212124;
+        text-decoration: none;
+        color: white;
+        border-left: 1px solid #111;
+        font-size: 14px;
+        padding: 18px 20px;
+        transition: .2s;
+    }
+
+    .header_right a:hover {
+        background-color: #111;
+        cursor: pointer;
+    }
+
+    .header_right img {
+        background: rgba(0, 0, 0, 8);
+        object-fit: cover;
+        border: 2px solid #53535F;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .header_right form {
+        display: inline-flex;
+        margin: 0;
+    }
+
+    .search_field {
+        background: #212124;
+        border-left: 1px solid #111;
+        font-weight: bold;
+        color: darkred;
+        border-radius: 0;
+        height: 55px;
+        width: 365px;
+        margin: 0;
+    }
+
+    .search_button {
+        background: #212124;
+        border: solid 1px transparent;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        height: 55px;
+        width: 48px;
+        transition: .2s;
+    }
+
+    .search_button:hover {
+        background-color: #111;
+        border: solid 1px transparent;
+    }
+
+    .arrow {
+        align-self: center;
+        border: solid darkgrey;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 4px;
+        margin-left: 4px;
+    }
+
+    .arrow_right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .down {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+
+    #userMenuLink {
+        display: flex;
+        padding: 5px 22px;
+        transition: .4s;
+    }
+
+    /****************************/
+    /***** ↓↓ Login menu ↓↓ *****/
+
+    #alertModal {
+        font-family: "new_zelek";
+        color: #18181B;
+    }
+
+    .loginMenu_container {
+        height: 100%;
+        padding: 2.5rem 2.1rem;
+    }
+
+    .login_menu {
+        background-color: #111;
+        overflow-y: hidden;
+        position: fixed;
+        height: 100%;
+        width: 0;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+
+    .login_menu label {
+        font-family: "new_zelek";
+        white-space: nowrap;
+    }
+
+    .login_menu input {
+        font-size: 15px;
+        width: 16rem;
+    }
+
+    .login_menu button {
+        width: 16rem;
+    }
+
+    .login_menu a {
+        text-decoration: none;
+        white-space: nowrap;
+        color: darkgrey;
+        font-size: 18px;
+        transition: .2s;
+    }
+
+    .login_menu a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    /***************************/
+    /***** ↓↓ User menu ↓↓ *****/
+
+    .usermenu_container {
+        height: 100%;
+        padding: 25px 30px;
+    }
+
+    .user_menu {
+        font-family: "new_zelek";
+        background-color: #111;
+        white-space: nowrap;
+        overflow-y: hidden;
+        position: fixed;
+        font-size: 18px;
+        height: 100%;
+        width: 0;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+
+    .user_menu a {
+        font-family: sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        transition: .2s;
+    }
+
+    .user_menu a:hover {
+        color: darkorange;
+        left: 4px;
+    }
+
+    .user_menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .userprofile {
+        display: flex;
+        border-bottom: 1px solid darkgrey;
+        height: 80px;
+    }
+
+    .userprofile img {
+        background: rgba(0, 0, 0, 8);
+        object-fit: cover;
+        border: 3px solid #53535F;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        margin-right: 8px;
+    }
+
+    .username {
+        align-self: center;
+    }
+
+    .usernav {
+        border-bottom: 1px solid darkgrey;
+        margin-bottom: 12px;
+    }
+
+    .usernav ul {
+        margin: 15px 0;
+    }
+
+    .dropdown {
+        font-family: sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        transition: .2s;
+    }
+
+    .dropdown:hover {
+        color: darkorange;
+        left: 4px;
+    }
+
+    .dropdown_list {
+        display: none;
+    }
+
+    .dropdown_list li {
+        padding: 7px 0;
+    }
+
+    .dropdown_list a {
+        font-family: sans-serif;
+        text-decoration: none;
+        position: relative;
+        color: darkgrey;
+        left: 0;
+        transition: .2s;
+    }
+
+    .dropdown_list a:hover {
+        color: dodgerblue;
+        left: 4px;
+    }
+
+    /************************/
+    /***** ↓↓ Footer ↓↓ *****/
+
+    .infos {
+        background: #212124;
+        display: flex;
+        justify-content: center;
+        padding: 20px 28px;
+    }
+
+    .infos a {
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        color: white;
+        font-size: 20px;
+        margin: 0 14px;
+        left: 0;
+        transition: .2s;
+    }
+
+    .infos a:hover {
+        color: darkorange;
+        left: 4px;
+    }
+}
+
+@media screen and (max-width: 1930px) {
+
+    body {
+        background: url(../img/background/CastleRoad_16.9.jpg)no-repeat;
+        background-attachment: fixed;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+}

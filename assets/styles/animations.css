@@ -1,0 +1,134 @@
+/**********************************************/
+/***** ↓↓ Fade in/Out games_subwrapper ↓↓ *****/
+
+.fadeInLeft {
+    transform: translateX(100px);
+    transition: .4s;
+    opacity: 1;
+}
+
+.fadeInRight {
+    transform: translateX(-100px);
+    transition: .4s;
+    opacity: 1;
+}
+
+.fadeInDown {
+    transform: translateY(100px);
+    transition: .4s;
+    opacity: 1;
+}
+
+.fadeInUp {
+    transform: translateY(-100px);
+    transition: .4s;
+    opacity: 1;
+}
+
+.fadeOutLeft,
+.fadeOutRight {
+    transition: .4s;
+    opacity: 0;
+}
+
+/********************************************************/
+/***** ↓↓ Carousel animation in games_subwrapper ↓↓ *****/
+
+.carousel__container {
+    display: flex;
+    justify-content: space-around;
+    transition: transform 0.3s;
+    transform: translate3d(-20%, -40%, -60%, -80%);
+}
+
+.carousel__next {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    border: solid gainsboro;
+    border-width: 0 4px 4px 0;
+    padding: 4px;
+    margin-left: 4px;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    margin-top: -20px;
+    right: 14px;
+    border-radius: 4px;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: rotate(-45deg);
+}
+
+.carousel__prev {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    border: solid gainsboro;
+    border-width: 0 4px 4px 0;
+    padding: 4px;
+    margin-left: 4px;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    margin-top: -20px;
+    left: 14px;
+    border-radius: 4px;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: rotate(135deg);
+}
+
+.carousel__next--hidden {
+    opacity: 0;
+    top: -999px;
+}
+
+.carousel__prev--hidden {
+    opacity: 0;
+    top: -999px;
+}
+
+/**************************************************************/
+/***** ↓↓ Fade in/out randomscreenshot_container & img ↓↓ *****/
+
+.reveal {
+    position: relative;
+    transition: .8s all ease;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+.revealImg {
+    position: relative;
+    transition: .8s all ease;
+    transform: translateY(-35px);
+    opacity: 0;
+}
+
+.reveal.active,
+.revealImg.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/************************************************************/
+/***** ↓↓ FadeIn triggered img in random screenshots ↓↓ *****/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.9)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}

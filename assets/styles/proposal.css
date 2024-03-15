@@ -1,0 +1,44 @@
+@import url("bricks.css");
+@import url("dividers.css");
+
+.proposal_wrapper {
+    padding: 14rem 0;
+    margin: 0 auto;
+    width: 45rem;
+}
+
+.proposal_title {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "new_zelek";
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.proposal_container {
+    text-align: center;
+    box-shadow: 0px 4px 8px black inset;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 25px;
+}
+
+.proposal_container p,
+a {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.proposal_container p {
+    font-family: sans-serif;
+}
+
+.proposal{
+    height: 15rem;
+    width: 32rem;
+    margin: 2rem 1rem;
+}
