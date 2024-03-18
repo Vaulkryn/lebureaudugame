@@ -2,7 +2,7 @@
 
 Le projet contient normalement les dossiers "fonts", "video" et "img" qui contient lui-même "avatar", "games" et "icons" mais inutile de les ajouter ici.
 
-J'ai fais une vidéo qui présente brièvement le site: https://fromsmash.com/Projet-lebureaudugame.
+J'ai fais une vidéo qui présente brièvement le site: https://fromsmash.com/demo-lebureaudugame.
 Au niveau de /controlroom, il y a un bug lorsque je valide le contenu, c'est à cause de la méthode que j'utilise un peu casse gueule.
 Je pourrais corriger ça en gérant le click avec du js classique et générer un json pour mettre à jour la base de données.
 Si le lien est mort, demandez moi pour le recréer.
